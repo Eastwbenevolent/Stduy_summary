@@ -1,0 +1,55 @@
+#Big-O Notation :
+
+Here are three Notations : Big(O),Big(theta),Big(Omega)
+
+Each notations have a diiferent Criteria to meausre algorithmic efficency.
+Big(O) indicated by the Upper limit line. <- The standard notification.
+Big(omega) indicated by the Lower limit line.
+Big(theta) indicated by the betwwen Upper limit and Lower limit.
+
+We should programming in consideration of time complexity for the worst situation.
+
+#The importance of Mathematical thinking
+
+We can reduce time complexity when we know some particular formulas.
+
+Ex) if we sum the array, we will use for loop.
+but we can code formula "n*(n_0+n_1)/2"
+
+#Importance of Data Structure
+
+@runtime_calculator
+def two_sum_dict(nums, target):
+    twosum = dict()
+    for i, num in enumerate(nums):
+        complement = target - num
+
+        if num in twosum:
+            return [twosum[num], i]
+        
+        twosum[complement] = i
+
+@runtime_calculator        
+def two_sum_for_loop(nums, target):
+    n = len(nums)
+    for i in range(n - 1):
+        for j in range(1, n):
+            if nums[i] + nums[j] == target:
+                return [i, j]
+
+we can code two types of notify two integers consist of cumsum.
+
+As for the code above, the time required does not change much as the data size increases, 
+while the for loop statement below fluctuates greatly.
+
+These results are a reality that makes us consider time complexity when programming!
+
+#Our ultimate type is graph-type.
+
+We're talking about the methods of graph algorithms like Bellman-Ford, Dykstra, and Floyd-Warshall,
+Tree algorithms such as the Minimum Spanning Tree (MST) will allow us to work on projects through this study.
+
+
+
+
+

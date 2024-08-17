@@ -1,0 +1,15 @@
+#***240817 Well-Sprint Study Summary***
+
+'''
+#Linked List
+
+Definiton : It is a structure in which data is connected like a mini-franc sausage.
+
+Each data occupies one node, and each data has a pointer, pointing to the memory address of the next data.
+
+Connection lists and arrangements are both slightly different from data structures that line up data.
+
+Connection lists are slow to access data, but they are fast to add and delete.
+Arrays are fast to access data, but slow to add and delete.
+
+Structures data by implementation methods such as Single Linked List / Double Linked List / Circular Linked List / Chunked List.

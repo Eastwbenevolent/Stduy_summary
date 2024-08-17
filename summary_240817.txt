@@ -1,7 +1,4 @@
-#***240817 Well-Sprint Study Summary***
-
-'''
-#Linked List
+Linked List
 
 Definiton : It is a structure in which data is connected like a mini-franc sausage.
 

@@ -1,0 +1,40 @@
+
+#singly linked list algorithm
+#Today I programming append() func insert new node in front of linked list.
+
+class Node:
+    def __init__(self, data=None) -> None:
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self) -> None:
+        init = Node('init')
+        self.head = init
+        self.tail = init
+        
+        self.current = None
+        self.length = 0
+        
+    def append(self, data) -> None:
+        new_node = Node(data)
+        self.tail.next = new_node
+        self.tail = new_node
+        self.length += 1
+        
+    def __len__(self) -> int:
+        return self.length
+        
+if __name__ == "__main__":
+    l = LinkedList()
+    l.append()
+    l.append(20)
+    l.append(30)
+    l.append(40)
+    l.append(50)
+    l.append(70)
+    
+
+    l.head.data
+    l.head.next.data
+    l.head.next.next.data

@@ -1,0 +1,50 @@
+#1.Singly Linked List
+
+class Node :
+  def __init__(self,data):
+    self.data = data
+    self.next = None
+
+class Linked_List :
+  def __init__(self):
+    init = Node('init')
+    self.head = init
+    self.tail = init
+
+    self.current = None
+    self.count = 0
+  #Insertion Methods
+  def append(self,data):
+    new_node = Node(data)
+    self.tail.next = new_node
+    self.count += 1
+  
+  def prepend(self,data):
+    new_node =Node(data)
+    new_node.next =self.head
+    self.head = new_node 
+    self.count += 1
+
+  def insert_after(self,index,data): 
+    if index == 0:
+      self.prepend(data)
+      return
+    
+    current = self.head
+    for i in range(index):
+      if current is None:
+        print("index out of range")
+        return
+      current = current.next
+    
+    new_node = Node(data)
+    new_node.next = current.next
+    current.next = new_node
+    self.count += 1 
+
+  #Deletion Methods
+  def delete(self,data):
+    self.data = 
+    for i in range(count):
+      if 
+    

@@ -1,0 +1,22 @@
+def solution(cards):
+    max_length = 0
+    max_width = 0
+    
+    for card in cards:
+        length = max(card[0], card[1])
+        width = min(card[0], card[1])
+        
+        max_length = max(max_length, length)
+        max_width = max(max_width, width)
+
+    return max_length * max_width
+
+
+
+business_card1 = [[60, 50], [30, 70], [60, 30], [80, 40]]    
+business_card2 = [[10, 7], [12, 3], [8, 15], [14, 7], [5, 15]]   
+business_card3 = [[14, 4], [19, 6], [6, 16], [18, 7], [7, 11]]   
+
+print(solution(business_card1))  
+print(solution(business_card2))  
+print(solution(business_card3))  
